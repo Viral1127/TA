@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    background-color: rgb(205,143,255);
+    height: 30px;
+    padding: 20px 30px;
+}
+.name{
+    float: left;
+    /* background-color: red; */
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: white;
+}
+.highlight-letter{
+    background-color: blueviolet;
+    padding: 0.7em;
+    border-radius: 50%;
+
+}
+nav{
+    float: right;
+}
+a{
+    margin: 5px 20px;
+    text-decoration-line: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.highlight-anchor{
+    background-color: blueviolet;
+    padding: 0.6em 1em;
+    border-radius: 1.5em;
+}
+.intro{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.intro>h1{
+    width: 35ch;
+    text-align: center;
+    color: black;
+}
+.purple-font{
+    color: purple
+}
+.experience-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.experience{
+    color: aliceblue;
+    font-size: 1.2rem;
+    background-color:blueviolet;
+    text-align: center;
+    padding: 0.5em 1.5em;
+    border-radius: 35px;
+    height: fit-content;
+    margin: 3em 0.5em;
+}
+.float-bottom{
+    align-self:flex-end;
+}
+.small-font{
+    font-size: 0.8rem;
+}
+.profile-img{
+    background: linear-gradient(purple,blue);
+    padding: 10px;
+    border-radius: 400px;
+    overflow: hidden;
+}
+.profile-img>img{
+    position: relative;
+    bottom: -60px;
+}
+.social-media-icon{
+    width: 100%;
+}
+.social-media>a{
+    width: 15%;
+}
+.social-media{
+    background-color: rgb(19,21,51);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about{
+    background-color: rgb(205,143,255);
+}
+.about-content{
+    display: flex;
+    padding: 50px;
+}
+.about-content>h1{
+    font-size: 6rem;
+    margin-right:3em ;
+    margin-left: 1em;
+}
+.about-content>p{
+    font-size: 2rem;
+}
+.about-content{
+    justify-content: space-evenly;
+}
+.project-count{
+    display: flex;
+    align-items: center;
+}
+.project-count-box{
+    font-size: 3rem;
+    padding: 0.5em;
+    background-color: rgb(132, 38, 230);
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+}

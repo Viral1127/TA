@@ -1,0 +1,189 @@
+(1) Anchor tag <a> tag :
+	
+		The HTML anchor tag defines a hyperlink that links one page to another page.
+	if we have many pages in our website and we want to connect one page with another page then we can use anchor tag.
+	we create a link from the anchor tag and whatever text we link to is called hypertext.
+
+Attributes for the anchor tag :
+	
+	there are two important attributes of anchor tag.
+
+	href:
+		href stands for hyperlink refrence , in href we have to give adress of another webpage where we want to go.
+
+	target:
+		
+		it is used in case of links , it helps if we want to open our link in a new tab or in the same tab in which we are working.
+	
+	<a href = "..........."> Link text </a>
+
+Types of Links : 
+
+1) internal link :
+
+	=> Link to the different  webpage in same website.
+
+	example (give example in projector) :
+
+		here we create 3 files : 1) collage.html 2) course.html 3) contact.html
+
+		<body>
+			<a href="./course.html">go to course page </a>
+			<a href="./contact.html">go to contact page</a>
+		</body>		
+		
+	=> now we want to go another section in same page. so here we will ceate section link
+
+	example : 
+		
+		filename : collage.html
+
+		<body>
+			<a href="#p1"> go to paragraph1 </a>
+			<a href="#p1"> go to paragraph2 </a>
+
+			<p id="p1">lorem ipsum</p>
+			<p id="p2">lorem ipsum</p>
+			<p>loem ipsum</p>
+			<p>loem ipsum</p>
+			<p>loem ipsum</p>
+			<p>loem ipsum</p>
+		</body>
+			
+		
+2) external link :
+
+	=> Link to webpages outside current website
+
+	example :
+		if we want to go google website 
+
+		<body>
+			<a href="https://www.google.com/">go to google</a>
+		</body>
+ 	
+
+(2) iframe tag
+	
+	iframe stands for "inline Frame". iframe used to embed external ads, videos and tags 
+	
+	Example: 
+		when we open youtube so we can see video is playing in perticular frame...so it's a iframe.
+
+	How to create iframe ??
+
+	<ifreme src="video1.mp4" height="100px" width="100px"></iframe>
+
+
+(3) List controls
+
+	html lists allow web devlopers to group a set of related items in list.
+
+	there are two type of lists : 
+	1) Unordered list 2) Ordered list
+
+	1) Unordered list :
+
+		unordered list starts with <ul> tag.
+		each list items starts with <li> tag.
+		list items will be marked with bulets (small black circle) by default.
+		if we want square bulets then write <ul type="square">
+
+		Example : 
+			<ul>
+				<li>coffee</li>
+				<li>tea</li>
+				<li>milk</li>
+			</ul>
+
+	2) Ordered list : 
+
+		An ordered list starts with <ol> tag.
+		each list items starts with <li> tag.
+		list items will be marked with numbers by default.
+		if we want to start with a then write <ol type="a">
+	
+		Example :
+			<ol>
+				<li>coffee</li>
+				<li>tea</li>
+				<li>milk</li>
+			</ol>
+
+(4) Image controls
+
+	The HTML <img> tag is used to embed an image in a web page.
+	The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+	Attibutes :
+	
+	1) src :
+		it specifies the path to the image.
+
+	2) alt :
+		it specifies an alternate text for the image.
+		The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it 
+
+	<img src="url" alt="demo">
+
+	=> Image size - Height and width :
+		
+			use to give specific height and width to the image.
+		
+		Example :
+			<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+
+(5) input tag :
+	
+	<input> elements are used within <form> element to declare input controls that allow users to input data.
+	the input tag specifies an input field where the user can enter data.
+	The <input> element can be displayed in several ways, depending on the type attribute.
+
+	1) input types(mostly uses) : 
+		
+		=>Input Type Text :
+			<input type="text"> defines a single-line text input field
+	
+		=>Input Type Password :
+			<input type="password"> defines a password field
+		
+		=>Input Type Submit :
+			<input type="submit"> defines a button for submitting form data to a form-handler.
+			The form-handler is typically a server page with a script for processing input data.
+			The form-handler is specified in the form's action attribute.
+
+		=>Input Type Reset :
+			<input type="reset"> defines a reset button that will reset all form values to their default values.
+
+		=>Input Type Radio :
+			<input type="radio"> defines a radio button.
+			Radio buttons let a user select ONLY ONE of a limited number of choices.
+
+		=>Input Type Checkbox :
+			<input type="checkbox"> defines a checkbox.
+			Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+		=>Input Type Button :
+			<input type="button"> defines a button
+
+		=>Input Type Email :
+			The <input type="email"> is used for input fields that should contain an e-mail address.
+			Depending on browser support, the e-mail address can be automatically validated when submitted.
+
+	2)input Attributes :
+		
+		=>value Attribute :
+			The input value attribute specifies an initial value for an input field.
+
+		=>disabled Attribute :
+			The input disabled attribute specifies that an input field should be disabled.
+			A disabled input field is unusable and un-clickable.
+
+		=>placeholder Attribute :
+			The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).
+			The short hint is displayed in the input field before the user enters a value.
+			The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+
+		=>required Attribute :
+			The input required attribute specifies that an input field must be filled out before submitting the form.

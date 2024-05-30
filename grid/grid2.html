@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 50px;
+            padding: 0px;
+            margin: 0px;
+        }
+        body *{
+            display: grid;
+            place-content: center;
+        }
+        body{
+            display: grid;
+            grid-template-areas: "main" "menu" "header" "extra" "banner" "image" "hero"; 
+        }
+        .header{
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            grid-area: header;
+        }
+        .menu{
+            color: white;
+            grid-area: menu;
+            background-color: red;
+        }
+        .hero{
+            color: aliceblue;
+            background-color: skyblue;
+            grid-area: hero;
+        }
+        .main{
+            color: white;
+            background-color: darkblue;
+            
+            grid-area: main;
+        }
+        .image{
+            background-color: aqua;
+            grid-area: image;
+        }
+        .extra{
+            background-color: aquamarine;
+            grid-area: extra;
+        }
+        .banner{
+            background-color: goldenrod;
+            grid-area: banner;
+        }
+        
+        @media screen and (min-width : 700px){
+            body{
+                grid-template-areas: 
+                "header header header header header header header header header header"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "hero hero hero hero hero hero hero hero hero hero"
+                "menu menu menu main main main main main main main"
+                "menu menu menu main main main main main main main"
+                "menu menu menu main main main main main main main"
+                "menu menu menu main main main main main main main"
+                "menu menu menu main main main main main main main"
+                "menu menu menu banner banner banner banner banner banner banner"
+                "menu menu menu banner banner banner banner banner banner banner"
+                "menu menu menu extra extra extra extra extra image image"
+                "menu menu menu extra extra extra extra extra image image"
+
+            ;
+
+            grid-template-rows: repeat(30, 80px);
+
+            }
+            
+        }
+        @media screen and (min-width : 1200px) {
+            body{
+                grid-template-areas: 
+            "header header header menu menu menu menu menu menu menu"
+            "header header header menu menu menu menu menu menu menu"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "hero hero hero hero hero hero hero hero hero hero"
+            "main main main main . . . image image image"
+            "main main main main . . . image image image"
+            "main main main main . . . image image image"
+            "main main main main . . . extra extra extra"
+            "main main main main . . . extra extra extra"
+            "main main main main . . . extra extra extra"
+            "banner banner banner banner banner banner banner banner banner banner"
+            "banner banner banner banner banner banner banner banner banner banner"
+
+            ;
+            
+            grid-template-rows: repeat(30, 50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="menu">menu</div>
+    <div class="hero">hero</div>
+    <div class="main">main</div>
+    <div class="image">image</div>
+    <div class="extra">extra</div>
+    <div class="banner">banner</div>
+</body>
+</html>

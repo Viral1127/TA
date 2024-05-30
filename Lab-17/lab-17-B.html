@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab-17-B</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.dev1{
+			font-size: 25px;
+		}
+		.height-80{
+			height: 80vh;
+		}
+		.gradyellow{
+			background-image: linear-gradient(to right,yellow,white);
+		}
+		.yel{
+			background-color: yellow;
+		}
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-fluid bg-light">
+	<div class="row">
+		<!-- drawer -->
+		<div class="col-12 col-md-3 bg-primary height-80">
+			<div class="row p-2 bg-info">
+				<div class="col d-flex align-items-center justify-content-center"><h3><b>Open</b> Admin</h3></div>
+			</div>
+			<div class="row p-2 mt-3">
+				<div class="col">
+					<div class="input-group mb-3 bg-info">
+					  <input type="text" class="form-control bg-info" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					  <div class="input-group-append">
+					    <button class="btn btn-info" type="button">
+					    	<img src="./search.png" height="15px" />
+					    </button>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				 <div class="col-11 text-light p-2">
+				 	Dashboard
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col-1 p-0">
+					<div class="bg-warning m-0" style="width:10px; height: 100%;"></div>
+				</div>
+				 <div class="col-11 text-light p-2">
+				 	Pages
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				 <div class="col-11 text-light p-2">
+				 	Admin
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				 <div class="col-11 text-light p-2">
+				 	Helpers
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				 <div class="col-11 text-light p-2">
+				 	Media Managers
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				 <div class="col-11 text-light p-2">
+				 	Config
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				 <div class="col-11 text-light p-2">
+				 	Api Tester
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col"></div>
+				 <div class="col-11 text-light p-2">
+				 	Page Designer
+				 </div>
+			</div>
+		</div>
+		<div class="col-12 col-md-9 ">
+			<div class="row bg-white">
+				<div class="col-10 p-3">
+					<img src="./menu.png" height="20px" />
+				</div>
+				<div class="col p-2 d-flex align-items-center justify-content-end">
+					<img src="https://t3.ftcdn.net/jpg/03/62/56/24/360_F_362562495_Gau0POzcwR8JCfQuikVUTqzMFTo78vkF.jpg" height="50px" width="65px" />
+					<b>Administrator</b>
+				</div>
+			</div>
+			<div class="row p-3">
+				<div class="col-10 p-0"><span class="dev1">Page</span>List</div>
+				<div class="col d-flex align-items-center justify-content-end">Home/Pages</div>
+			</div>
+			<div class="row bg-white m-2">
+				<div class="col-9 d-flex align-items-center justify-content-start"><ul class="nav p-2">
+				  <li class="nav-item p-1">
+				    <button type="button" class="btn btn-danger btn-sm">+New</button>
+				  </li>
+				  <li class="nav-item p-1">
+				     <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    2 Items Selected
+					  </button>
+				  </li>
+				  <li class="nav-item p-1">
+				     <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Filter
+					  </button>
+				  </li>
+				  <li class="nav-item p-1">
+				    <button type="button" class="btn btn-danger btn-sm"><span class="badge badge-white text-white">i</span> Report</button>
+				  </li>
+				</ul>
+				</div>
+				<div class="col-3 d-flex align-items-center justify-content-end"><ul class="nav p-2">
+				  <li class="nav-item p-1">
+				     <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   Export
+					  </button>
+				  </li>
+				  <li class="nav-item p-1">
+				     <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   <img src="https://cdn-icons-png.flaticon.com/512/55/55281.png" height="20px" />
+					  </button>
+				  </li>
+				</ul>
+				</div>
+			</div>
+			<div class="row bg-white m-2 ">
+				<div class="col d-flex align-items-center">
+					<div class="form-check">
+					  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label=""><b>ID</b>
+					</div>
+				</div>
+				<div class="col d-flex align-items-center">
+					<b>Title</b>
+				</div>
+				<div class="col">
+					<button class="btn btn-white btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <b>Dates</b>
+					  </button>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<b>Tags</b>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<b>Star</b>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<b>Created at</b>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<b>Updated at</b>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<b>Actions</b>
+				</div>
+			</div>
+			<div class="row bg-white m-2 d-flex align-items-center justify-content-center">
+				<div class="col d-flex align-items-center">
+					<div class="form-check">
+					  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="">1
+					</div>
+				</div>
+				<div class="col d-flex align-items-center">
+					Homepage 
+				</div>
+				<div class="col">
+					
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<span class="badge bg-success text-light ms-1">new</span>
+					<span class="badge bg-success text-light ms-1">special</span>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center" style="font-size: 10px;">
+					2022-02-17	00:51:01
+				</div>
+				<div class="col d-flex align-items-center justify-content-center" style="font-size: 10px">
+					2022-06-25 14:30:21
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-pencil p-1" aria-hidden="true"></i>
+					<i class="fa fa-eye p-1" aria-hidden="true"></i>
+					<i class="fa fa-trash p-1" aria-hidden="true"></i>
+					<i class="fa fa-flask p-1" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="row bg-white m-2 d-flex align-items-center justify-content-center">
+				<div class="col d-flex align-items-center">
+					<div class="form-check">
+					  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="">2
+					</div>
+				</div>
+				<div class="col d-flex align-items-center">
+					Blog 
+				</div>
+				<div class="col">
+					2022-02-17
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<span class="badge bg-success text-light ms-1">new</span>
+					<span class="badge bg-success text-light ms-1">special</span>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa-solid fa-star"></i>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center" style="font-size: 10px;">
+					2022-02-17	00:51:01
+				</div>
+				<div class="col d-flex align-items-center justify-content-center" style="font-size: 10px">
+					2022-06-25 14:30:21
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-pencil p-1" aria-hidden="true"></i>
+					<i class="fa fa-eye p-1" aria-hidden="true"></i>
+					<i class="fa fa-trash p-1" aria-hidden="true"></i>
+					<i class="fa fa-flask p-1" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="row bg-white m-2 d-flex align-items-center justify-content-center">
+				<div class="col d-flex align-items-center">
+					<div class="form-check">
+					  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="">3
+					</div>
+				</div>
+				<div class="col d-flex align-items-center">
+					Contact 
+				</div>
+				<div class="col">
+					2022-02-17
+				</div>
+				<div class="col d-flex align-items-center ">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<!-- <span class="badge bg-success text-light ms-1">new</span>
+					<span class="badge bg-success text-light ms-1">special</span> -->
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center" style="font-size: 10px;">
+					2022-02-17	00:51:01
+				</div>
+				<div class="col d-flex align-items-center justify-content-center" style="font-size: 10px">
+					2022-06-25 14:30:21
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-pencil p-1" aria-hidden="true"></i>
+					<i class="fa fa-eye p-1" aria-hidden="true"></i>
+					<i class="fa fa-trash p-1" aria-hidden="true"></i>
+					<i class="fa fa-flask p-1" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="row bg-white m-2 d-flex align-items-center justify-content-center">
+				<div class="col d-flex align-items-center yel">
+					<div class="form-check">
+					  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="">4
+					</div>
+				</div>
+				<div class="col d-flex align-items-center yel">
+					About Us 
+				</div>
+				<div class="col yel">
+					2022-02-17
+				</div>
+				<div class="col d-flex align-items-center yel">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<span class="badge bg-success text-light ms-1">code</span>
+					<span class="badge bg-success text-light ms-1">special</span>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center yel">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<div class="col d-flex align-items-center justify-content-center yel" style="font-size: 10px;">
+					2022-02-17	00:51:01
+				</div>
+				<div class="col d-flex align-items-center justify-content-center gradyellow h-100" style="font-size: 10px">
+					2022-06-25 14:30:21
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+					<i class="fa fa-pencil p-1" aria-hidden="true"></i>
+					<i class="fa fa-eye p-1" aria-hidden="true"></i>
+					<i class="fa fa-trash p-1" aria-hidden="true"></i>
+					<i class="fa fa-flask p-1" aria-hidden="true"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
